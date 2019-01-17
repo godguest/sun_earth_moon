@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>太阳、地球和月亮</title>
+  <style>
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    border-radius: 50%;
+  }
+  .a {
+    width: 660px;
+    height: 660px;
+    border: 1px solid #ccc;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -330px;
+    margin-top: -330px;
+    background: url(images/sun.png) no-repeat center;
+    animation: rotate 10s linear infinite;
+  }
+  .b {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    margin-left: -110px;
+    background: url(images/earth.png) no-repeat center;
+    animation: rotate 6s linear infinite;
+  }
+  .c {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -50px;
+    background: url(images/moon.png) no-repeat center;
+  }
+  </style>
+</head>
+<body>
+  <div class="a">
+    <div class="b">
+      <div class="c"></div>
+    </div>
+  </div>
+</body>
+</html>
